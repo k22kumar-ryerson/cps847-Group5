@@ -11,8 +11,8 @@ jdk:
   - openjdk6
 
 install
-  - pip install codecov
-  - pip install coverage
+  - npm install codecov
+  - npm install coverage
 
 script
   - ant test

@@ -1,5 +1,9 @@
 <project name="MyProject" default="dist" basedir=".">
 
+  <classpath>
+    <classpathentry kind="lib" path="lib/junit-4.11.jar"/>
+  </classpath>
+  
   <property name="main.build.dir" value="build"/>
   <property name="main.src.dir" value="src"/>
   <property name="test.build.dir" value="build"/>

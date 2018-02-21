@@ -1,7 +1,7 @@
 import org.junit.Test;
 import static org.junit.Assert.*;
 
-import Operation;
+import Operation.java;
 
 /**
  * Write a description of class Junit here.

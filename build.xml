@@ -46,10 +46,6 @@
    
   <jacoco:report>
                         
-    <executiondata>
-        <file file="jacoco.exec"/>
-    </executiondata>
-                        
     <structure name="Example Project">
         <classfiles>
             <fileset dir="classes"/>

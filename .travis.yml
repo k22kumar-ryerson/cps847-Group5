@@ -20,4 +20,4 @@ script
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
-  - codecov -- token=6974e4e3-758c-4790-94ae-8a5400fd3f8d
+  - codecov --token=6974e4e3-758c-4790-94ae-8a5400fd3f8d

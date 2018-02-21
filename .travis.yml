@@ -14,10 +14,3 @@ after_success:
   - bash <(curl -s https://codecov.io/bash)
 
 
-deploy:
-  provider: s3
-  access_key_id: AKIAJMLXOU5QAR3Y3ADA
-  secret_access_key: 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
-  bucket: cps847g5
-  local-dir: s3
-  region: us-east-1

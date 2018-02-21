@@ -1,8 +1,8 @@
 <project name="MyProject" default="dist" basedir=".">
   
-  <property name="main.build.dir" value="build"/>
-  <property name="main.src.dir" value="src"/>
-  <property name="test.build.dir" value="build"/>
+  <property name="main.build.dir" value="build/main" />  
+  <property name="main.src.dir" value="src" />
+  <property name="test.build.dir" value="build/test" />
   <property name="test.src.dir" value="src"/>
 
   <path id="classpath.base" />
@@ -11,12 +11,6 @@
     <pathelement location="junit-4.12.jar" />
     <pathelement location="${main.build.dir}"/>
     <path refid="classpath.base" />
-  </path>
-  
-  <path id="classpath.test">
-    <pathelement location="lib/junit-4.12.jar"/>
-    <pathelement location="lib/hamcrest-core-1.3.jar"/>
-    <pathelement location="${main.build.dir}"/>
   </path>
 
   <target name="compile">

@@ -10,9 +10,13 @@ jdk:
   - openjdk7
   - openjdk6
 
+install
+  - pip install codecov
+  - pip install coverage
+
 script
-  -ant test
-  coverage run ./
+  - ant test
+  - coverage run ./test/Junit.java
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)

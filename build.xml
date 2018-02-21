@@ -1,5 +1,5 @@
 <project name="MyProject" default="dist" basedir=".">
-  <<project name="junit-example">
+
   <property name="main.build.dir" value="build"/>
   <property name="main.src.dir" value="src"/>
   <property name="test.build.dir" value="build"/>
@@ -35,4 +35,5 @@
         </batchtest>
     </junit>
   </target>
+  
 </project>

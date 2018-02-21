@@ -1,4 +1,4 @@
-
+package cps847a2;
 /**
  * Write a description of class Adder here.
  *

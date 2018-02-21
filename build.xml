@@ -42,22 +42,4 @@
     </junit>
   </target>
   
-  <jacoco:coverage>
-    <java classname="org.jacoco.examples.HelloJaCoCo" fork="true">
-        <classpath>
-            <pathelement location="./bin"/>
-        </classpath>
-    </java>
-</jacoco:coverage>
-
-
-<jacoco:coverage>
-    <junit fork="true" forkmode="once">
-        <test name="org.jacoco.examples.HelloJaCoCoTest"/>
-        <classpath>
-            <pathelement location="./bin"/>
-        </classpath>
-    </junit>
-</jacoco:coverage>
-  
 </project>

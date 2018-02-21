@@ -44,5 +44,23 @@
       </jacoco:coverage>
     </target>
    
+  <jacoco:report>
+                        
+    <executiondata>
+        <file file="jacoco.exec"/>
+    </executiondata>
+                        
+    <structure name="Example Project">
+        <classfiles>
+            <fileset dir="classes"/>
+        </classfiles>
+        <sourcefiles encoding="UTF-8">
+            <fileset dir="src"/>
+        </sourcefiles>
+    </structure>
+                        
+    <html destdir="report"/>
+                        
+</jacoco:report>
   
 </project>

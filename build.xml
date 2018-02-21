@@ -1,5 +1,9 @@
 <project name="MyProject" default="dist" basedir=".">
   
+  <taskdef uri="antlib:org.jacoco.ant" resource="org/jacoco/ant/antlib.xml">
+        <classpath path="path_to_jacoco/lib/jacocoant.jar"/>
+  </taskdef>
+  
   <property name="main.build.dir" value="build/main" />  
   <property name="main.src.dir" value="src" />
   <property name="test.build.dir" value="build/test" />
@@ -37,5 +41,23 @@
         </batchtest>
     </junit>
   </target>
+  
+  <jacoco:coverage>
+    <java classname="org.jacoco.examples.HelloJaCoCo" fork="true">
+        <classpath>
+            <pathelement location="./bin"/>
+        </classpath>
+    </java>
+</jacoco:coverage>
+
+
+<jacoco:coverage>
+    <junit fork="true" forkmode="once">
+        <test name="org.jacoco.examples.HelloJaCoCoTest"/>
+        <classpath>
+            <pathelement location="./bin"/>
+        </classpath>
+    </junit>
+</jacoco:coverage>
   
 </project>
